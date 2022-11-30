@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+/*===============
+ GLOBAL SELECTORS
+ ================*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 1300px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    padding: 5rem 10rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*========== 
+HEADER STYLE
+============ */
+
+header {
+    height: 100%;
+    background: url(images/desktop//image-hero.jpg) no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 0%, 55%);
+    background-blend-mode: multiply;
+    padding: 5rem 10rem;
+}
+
+.heading-box {
+    border: 3px solid white;
+    padding: 3rem;
+    margin-top: 8rem;
+    width: 40rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 300;
+}
+
+/*======= 
+NAV STYLE
+=========  */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Alata', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+nav ul li {
+    padding: 1rem;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0%;
+    height: 2px;
+    bottom: 5px;
+    left: 0px;
+    background-color: white;
+    transition: 0.5s;
+
+}
+
+/*=========== 
+ABOUT SECTION
+============= */
+
+#about {
+    margin-top: 2rem;
+    height: 80vh;
+}
+
+.image-interactive {
+    width: 100%;
+    position: relative;
+
+}
+
+.image-interactive img {
+    min-width: 50%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    top: 18rem;
+    left: 40rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+    background-color: white;
+}
+
+.caption h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.caption p {
+    line-height: 1.5;
+}
+
+/*===============
+CREATIONS SECTION
+=================  */
+
+#creations {
+    margin: 3rem auto;
+}
+
+.heading-creations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-creations h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.heading-creations a {
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    letter-spacing: 4px;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5rem auto;
+    gap: 2rem;
+    height: 100vh;
+}
+
+.grid-item {
+    color: white;
+    width: 1fr;
+    padding: 2rem;
+    display: flex;
+
+}
+
+.grid-item h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    align-self: flex-end;
+
+}
+
+.grid-item1 {
+    background: url(images/desktop/image-deep-earth.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item2 {
+    background: url(images/desktop/image-night-arcade.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item3 {
+    background: url(images/desktop//image-soccer-team.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item4 {
+    background: url(images/desktop/image-grid.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item5 {
+    background: url(images/desktop/image-from-above.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item6 {
+    background: url(images/desktop/image-pocket-borealis.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item7 {
+    background: url(images/desktop/image-curiosity.jpg) no-repeat;
+    background-size: cover;
+}
+
+.grid-item8 {
+    background: url(images/desktop/image-fisheye.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+/*========== 
+FOOTER STYLE
+============  */
+
+footer {
+    height: 15vh;
+    background-color: black;
+    color: white;
+    padding: 2rem 10rem;
+    font-family: 'Alata', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 30%;
+}
+
+.footer-right {
+    width: 30%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 1.2rem;
+}
+
+.footer-logo {
+    margin-bottom: 1.5rem;
+}
+
+.social-media-link {
+    margin-left: 1rem;
+}
+
+footer p {
+    text-align: end;
+    color: hsl(0, 0%, 41%)
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/*=========== 
+ACTIVE STATES
+=============  */
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.grid-item:hover {
+    cursor: pointer;
+    color: black;
+    background-color: hsl(0, 0%, 55%);
+    background-blend-mode: lighten;
+}
