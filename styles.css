@@ -171,7 +171,6 @@ CREATIONS SECTION
     grid-template-columns: repeat(4, 1fr);
     margin: 5rem auto;
     gap: 2rem;
-    height: 100vh;
 }
 
 .grid-item {
@@ -179,6 +178,7 @@ CREATIONS SECTION
     padding: 2rem;
     display: flex;
     align-self: stretch;
+    aspect-ratio: 1/2;
 
 }
 
@@ -384,6 +384,7 @@ ACTIVE STATES
     }
 
     .grid-item {
+        aspect-ratio: auto;
         padding: 2rem 4rem;
     }
 
@@ -490,5 +491,58 @@ ACTIVE STATES
 
     .desktop-menu {
         display: none;
+    }
+
+    /*================= 
+    MOBILE HAMBURGER MENU 
+    ==================== */
+
+    nav {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: black;
+        color: white;
+        z-index: 5;
+        padding: 2rem;
+    }
+
+    .mobile-nav-logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .mobile-menu ul li {
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+
+
+    .logo-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-close {
+        border: none;
+        background-color: transparent;
     }
 }
