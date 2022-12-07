@@ -46,7 +46,7 @@ header {
     border: 3px solid white;
     padding: 3rem;
     margin-top: 8rem;
-    width: 40rem;
+    width: min-content;
 }
 
 h1 {
@@ -315,7 +315,7 @@ ACTIVE STATES
 
 @media (max-width: 1300px) {
     body {
-        min-width: 270px;
+        min-width: 320px;
         max-width: 1300px;
         width: 100%;
     }
