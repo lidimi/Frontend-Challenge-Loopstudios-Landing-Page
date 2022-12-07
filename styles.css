@@ -156,7 +156,7 @@ CREATIONS SECTION
     font-weight: 300;
 }
 
-.heading-creations a {
+.see-all {
     background-color: black;
     color: white;
     font-size: 1.3rem;
@@ -164,6 +164,10 @@ CREATIONS SECTION
     padding: 1rem 2rem;
     letter-spacing: 4px;
     border: 2px solid black;
+}
+
+.see-all-mobile {
+    display: none;
 }
 
 .grid-cards {
@@ -428,6 +432,20 @@ ACTIVE STATES
         background-size: cover;
     }
 
+    .see-all-mobile {
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        padding: 1rem 2rem;
+        letter-spacing: 4px;
+        border: 2px solid black;
+    }
+
+
     /*============ 
     FOOTER SECTION
     ==============  */
@@ -488,6 +506,7 @@ ACTIVE STATES
         display: block;
         max-width: 100%;
     }
+
 
     .desktop-menu {
         display: none;
